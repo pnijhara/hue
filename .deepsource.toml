@@ -1,0 +1,20 @@
+version = 1
+
+test_patterns = [
+    "**/tests.py",
+    "**/api_tests.py",
+    "**/api2_tests.py",
+    "**/test.py",
+    "**/test_*.py",
+    "**/*_util_test.py"
+]
+
+exclude_patterns = ["**/migrations/**"]
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+  
